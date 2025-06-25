@@ -1,0 +1,12 @@
+fastapi
+uvicorn
+jinja2
+numpy
+tensorflow
+opencv-python
+pillow
+flask
+werkzeug
+scikit-learn
+pandas
+keras 
