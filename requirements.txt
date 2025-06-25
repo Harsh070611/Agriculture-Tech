@@ -1,12 +1,19 @@
+# Web frameworks
 fastapi
 uvicorn
 jinja2
-numpy
-tensorflow==2.11.0
-opencv-python
-pillow
 flask
 werkzeug
-scikit-learn
+
+# Data and ML
+numpy
 pandas
-keras==2.11.0 
+scikit-learn
+
+# Deep Learning
+tensorflow
+keras
+
+# Image processing
+opencv-python
+pillow
