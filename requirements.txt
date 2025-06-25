@@ -2,11 +2,11 @@ fastapi
 uvicorn
 jinja2
 numpy
-tensorflow
+tensorflow==2.11.0
 opencv-python
 pillow
 flask
 werkzeug
 scikit-learn
 pandas
-keras 
+keras==2.11.0 
