@@ -12,6 +12,7 @@ scikit-learn
 
 # Deep Learning
 tensorflow
+keras
 
 # Image processing
 opencv-python
