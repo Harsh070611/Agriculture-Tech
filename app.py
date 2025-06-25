@@ -10,7 +10,7 @@ app = FastAPI()
 templates = Jinja2Templates(directory="templates")
 
 # Assuming CLASS_NAMES and MODEL are already defined
-MODEL = tf.keras.models.load_model("/Users/harshnahata/Main/Deep Learning/cnn/agriculture-tech/saved_models/1.keras")
+MODEL = tf.keras.models.load_model("saved_models/1.keras")
 CLASS_NAMES = ["Early Blight", "Healthy", "Late Blight"]
 
 @app.get("/", response_class=HTMLResponse)
@@ -33,7 +33,7 @@ async def predict(
     try:
         # Save the uploaded file to the server
         image_data = await file.read()
-        folder_name = "/Users/harshnahata/Main/Deep Learning/cnn/agriculture-tech/static"  # Folder to save images
+        folder_name = "static"  # Folder to save images
         os.makedirs(folder_name, exist_ok=True)  # Ensure the folder exists
         file_path = os.path.join(folder_name, file.filename)
 
