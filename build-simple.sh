@@ -5,11 +5,8 @@ set -o errexit
 # Upgrade pip first
 pip install --upgrade pip
 
-# Install build tools first
-pip install setuptools==65.5.1 wheel==0.38.4 build==0.10.0
-
-# Install other dependencies
-pip install -r requirements.txt
+# Install dependencies from simplified requirements
+pip install -r requirements-simple.txt
 
 # Create necessary directories if they don't exist
 mkdir -p static/uploads
